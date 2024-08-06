@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "text": "What is the capital of France?",
+      "answer": "Paris"
+    },
+    {
+      "text": "Who wrote the play 'Romeo and Juliet'?",
+      "answer": "Shakespeare"
+    },
+    {
+      "text": "Which planet is known as the Red Planet?",
+      "answer": "Mars"
+    },
+    {
+      "text": "What is the largest planet in our solar system?",
+      "answer": "Jupiter"
+    },
+    {
+      "text": "Which planet is closest to the Sun?",
+      "answer": "Mercury"
+    },
+    {
+      "text": "What is the second smallest planet in our solar system?",
+      "answer": "Mars"
+    },
+    {
+      "text": "What is the capital of Japan?",
+      "answer": "Tokyo"
+    },
+    {
+      "text": "What is the currency of Australia?",
+      "answer": "Dollar"
+    },
+    {
+      "text": "Which gas do plants absorb during photosynthesis?",
+      "answer": "Carbon"
+    },
+    {
+      "text": "What is the largest ocean on Earth?",
+      "answer": "Pacific"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    position: relative;
+    font-family: Inter;
+    min-height: calc(100vh - 40px);
+    font-size: 1.5rem;
+    background-color: #D3D3D3;
+}
+
+.gallow {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gallows {
+
+    /* width: 100%; */
+    height: 400px;
+
+}
+
+.test {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.letters {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    max-width: 30rem;
+}
+
+.letter {
+
+    background-color: #778699;
+    width: 3rem;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+
+}
+
+.letter:hover {
+
+    background-color: black;
+
+}
+
+.line {
+    display: inline-block;
+    width: calc(100% - 5px);
+    color: black;
+    font-weight: bold;
+    border: 3px solid #000;
+
+}
+
+.unknown {
+
+    display: grid;
+    width: 100%;
+    gap: 5px;
+}
+
+.question {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.text {
+
+    font-weight: bold;
+
+}
+
+.ans {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.guesses {
+
+    color: red;
+
+}
+
+.gdiv {
+    position: relative;
+}
+
+.head {
+
+    position: absolute;
+    width: 4rem;
+    top: 125px;
+    right: 45px;
+
+}
+
+.body {
+
+    position: absolute;
+    height: 6rem;
+    top: 186px;
+    right: 74px;
+
+}
+
+.hand-one {
+    position: absolute;
+    top: 185px;
+    right: 77px;
+    height: 4rem;
+
+}
+
+.hand-two {
+    position: absolute;
+    top: 185px;
+    right: 18px;
+    height: 4rem;
+
+
+}
+
+.leg-one {
+
+    position: absolute;
+    top: 280px;
+    right: 74px;
+
+}
+
+.leg-two {
+
+    position: absolute;
+    top: 280px;
+    right: 10px;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+
+}
+
+.modal {
+    z-index: 2;
+    position: absolute;
+    top: 20%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.lose {
+
+    color: red;
+
+}
+
+.again {
+    background-color: #778699;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border: 1px solid #778699;
+    cursor: pointer;
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+@media(max-width: 680px)
+{
+
+    body {
+        flex-direction: column;
+    }
+    .modal {
+        top: 50%;
+        left: 30%;
+    }
+    
+
+}

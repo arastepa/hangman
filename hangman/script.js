@@ -1,0 +1,26 @@
+import { createKeyboard, genQuestion, createModal} from "./createTest.js";
+
+const gallow = document.createElement('div');
+gallow.classList.add('gallow');
+const test = document.createElement('div');
+test.classList.add('test');
+document.body.append(gallow, test);
+const image = document.createElement('img');
+image.src = './images/hangman.png';
+image.classList.add('gallows');
+const gdiv = document.createElement('div');
+gdiv.classList.add('gdiv');
+gdiv.appendChild(image);
+gallow.appendChild(gdiv);
+const text = document.createElement('h2');
+text.innerText = "HANGMAN GAME";
+gallow.append(text);
+const letters = document.createElement('div');
+letters.classList.add('letters');
+test.append(letters);
+createKeyboard(letters);
+const question = document.createElement('div');
+question.classList.add('question');
+test.prepend(question);
+const picked = genQuestion(question);
+createModal(picked);
